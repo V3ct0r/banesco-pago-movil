@@ -1,35 +1,46 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        banesco-movil
-      </h1>
-      <h2 class="subtitle">
-        Pantallas de Banesco Pago Movil
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+  <div class="w-3/4 px-4 py-12 max-w-xl mx-auto bg-white">
+    <div class="flex items-center justify-center mb-8">
+      <h2 class="text-blue-800 text-5xl font-black">Banesco</h2>
+      <h2 class="text-green-600 text-5xl font-serif">Pago Móvil</h2>
     </div>
+    <form action="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <!-- <div class="flex items-center justify-center"> -->
+      <div class="mb-6">
+        <input
+          class="border-4 border-gray-500 rounded-lg w-full"
+          type="text"
+          placeholder="Usuario"
+        />
+      </div>
+      <div class="mb-6">
+        <input
+          class="border-4 border-gray-500 rounded-lg w-full"
+          type="password"
+          placeholder="Clave"
+        />
+      </div>
+      <!-- </div> -->
+      <a href="">iniciar sesión</a>
+      <div>
+        <a href="">consultar saldo</a>
+        <a href="">pagar</a>
+      </div>
+      <div>
+        <a href="">información</a>
+        <a href="">conáctanos</a>
+      </div>
+    </form>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
-  components: {
-    Logo
+  components: {},
+  head: {
+    bodyAttrs: {
+      class: 'antialiased bg-green-600'
+    }
   }
 }
 </script>
@@ -40,34 +51,4 @@ export default {
   @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>

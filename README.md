@@ -1,4 +1,4 @@
-# banesco-movil
+# banesco-pago-movil
 
 > Pantallas de Banesco Pago Movil
 

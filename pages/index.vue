@@ -1,36 +1,58 @@
 <template>
-  <div class="w-3/4 px-4 py-12 max-w-xl mx-auto bg-white">
-    <div class="flex items-center justify-center mb-8">
-      <h2 class="text-blue-800 text-5xl font-black">Banesco</h2>
-      <h2 class="text-green-600 text-5xl font-serif">Pago Móvil</h2>
+  <!-- <div class="w-3/4 px-4 py-12 max-w-xl mx-auto bg-white rounded-lg shadow-lg"> -->
+  <div class="flex w-full h-screen items-center justify-center">
+    <div class="w-3/4 flex flex-col px-4 py-6 bg-white rounded-lg shadow-lg">
+      <div class="flex items-center justify-center mb-8 tracking-tighter">
+        <h2 class="text-blue-800 text-4xl font-black text-xs">
+          Banesco
+        </h2>
+        <h2 class="pl-3 text-green-700 text-4xl font-serif">
+          Pago Móvil
+        </h2>
+      </div>
+      <form action="">
+        <!-- <div class="flex items-center justify-center"> -->
+        <div class="mb-6">
+          <input
+            class="p-3 border-4 border-gray-700 rounded-lg w-full"
+            type="text"
+            placeholder="Usuario"
+          />
+        </div>
+        <div class="mb-6">
+          <input
+            class="p-3 border-4 border-gray-700 rounded-lg w-full"
+            type="password"
+            placeholder="Clave"
+          />
+        </div>
+        <!-- </div> -->
+        <a
+          class="flex items-center justify-center p-3 mb-6 bg-green-700 text-white uppercase rounded"
+          href=""
+        >
+          iniciar sesión
+        </a>
+        <div class="flex items-center justify-center mb-4 text-center">
+          <a
+            class="w-full w-1/2 p-3 uppercase border-2 border-green-700 rounded"
+            href=""
+          >
+            consultar saldo
+          </a>
+          <a
+            class="w-full w-1/2 ml-4 p-3 uppercase border-2 border-green-700 rounded"
+            href=""
+          >
+            pagar
+          </a>
+        </div>
+        <div>
+          <a href="">información</a>
+          <a href="">conáctanos</a>
+        </div>
+      </form>
     </div>
-    <form action="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-      <!-- <div class="flex items-center justify-center"> -->
-      <div class="mb-6">
-        <input
-          class="border-4 border-gray-500 rounded-lg w-full"
-          type="text"
-          placeholder="Usuario"
-        />
-      </div>
-      <div class="mb-6">
-        <input
-          class="border-4 border-gray-500 rounded-lg w-full"
-          type="password"
-          placeholder="Clave"
-        />
-      </div>
-      <!-- </div> -->
-      <a href="">iniciar sesión</a>
-      <div>
-        <a href="">consultar saldo</a>
-        <a href="">pagar</a>
-      </div>
-      <div>
-        <a href="">información</a>
-        <a href="">conáctanos</a>
-      </div>
-    </form>
   </div>
 </template>
 
@@ -39,7 +61,7 @@ export default {
   components: {},
   head: {
     bodyAttrs: {
-      class: 'antialiased bg-green-600'
+      class: 'antialiased bg-green-700'
     }
   }
 }
